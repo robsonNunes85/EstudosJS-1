@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,27 +12,23 @@
 
     <script>
 
+        //Crie uma função que dado o objeto a seguir:
+        //Retorne o seguinte conteúdo:
+        //O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com nº 1293.
+
+
         var endereco = {
-            rua: "Rua dos pinheiros",
+            rua: 'Rua dos pinheiros',
             numero: 1293,
-            bairro: "Centro",
-            cidade: "São Paulo",
-            uf: "SP"
-        };
-        // O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com nº 1293.
-        console.log("O usuário mora em",endereco.cidade,"/",endereco.uf,", no bairro",endereco.bairro,'na rua "',endereco.rua,'" com nº',endereco.numero,".");
-        
-         function frase (cidade,uf,bairro,rua,numero) {
-
-             this.endereco.cidade = cidade;
-             this.endereco.uf = uf;
-             this.endereco.bairro = bairro;
-             this.endereco.rua = rua;
-             this.endereco.numero = numero;
+            bairro: 'Centro',
+            cidade: 'São Paulo',
+            uf: 'SP'
         }
-
-
-
+        function constroiEndereco(enderecoCompleto) {
+            return enderecoCompleto = 'O usuário mora em '+ endereco.cidade +"/" + endereco.uf + ", no bairro "+ endereco.bairro + ' na rua "'+endereco.rua+'" com nº '+endereco.numero+".";
+        }
+        console.log(constroiEndereco(endereco));
+        
     </script>
 
 </body>
