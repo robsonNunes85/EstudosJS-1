@@ -1,2 +1,2 @@
 # EstudosJS-1
-Estudos javaScript
+Estudos javaScript Rocketseat
